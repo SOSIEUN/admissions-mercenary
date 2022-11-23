@@ -4,17 +4,18 @@
     <title>Yoo da-on</title>
     <meta charset="utf-8">
   <h1><a href="index.html">Yoo da-on</a></h1>
-<input id="night_day" type="button" value="night" onclick="
-if(document.querySelector('#night_day').value === 'night'){
-  document.querySelector('body').style.backgroundColor = 'black';
-  document.querySelector('body').style.color = 'white';
-  document.querySelector('#night_day').value = 'day';
-} else {
-  document.querySelector('body').style.backgroundColor = 'white';
-  document.querySelector('body').style.color = 'black';
-  document.querySelector('#night_day').value = 'night';
-}
-">
+  <input id="night_day2" type="button" value="night" onclick="
+   var target = document.querySelector('body');
+  if(this.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night';
+  }
+  ">
   <h3>
   <ol>
   <li><a href="1.html">admissions mercenary</li></a>
@@ -24,6 +25,7 @@ if(document.querySelector('#night_day').value === 'night'){
   </h3>
   </ol>
   <body>
+    <p>
   I met my brother Yi Jin, who I thought died with my parents,
    after 10 years.
   She is rumored to be a good student and have a pretty face.
@@ -38,6 +40,17 @@ if(document.querySelector('#night_day').value === 'night'){
   My older brother Yoo Yi-jin cares about my younger brother a lot.
   And Dayeon cares about her brother a lot, too.
   </p>
+  <input id="night_day2" type="button" value="night" onclick="
+if(this.value === 'night'){
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+  this.value = 'day';
+} else {
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  document.querySelector('#night_day2').value = 'night';
+}
+">
   <img src="da" width="30%">
   </body>
   </head>
