@@ -3,37 +3,54 @@
 <head>
     <title>Yoo da-on</title>
     <meta charset="utf-8">
-  <h1><a href="index.html">Yoo da-on</a></h1>
-  <input id="night_day2" type="button" value="night" onclick="
-   var target = document.querySelector('body');
-  if(this.value === 'night'){
+    <h1><a href="index.html">Yoo da-on</a></h1>
+    <input id="night_day2" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night')
+    {
     target.style.backgroundColor = 'black';
     target.style.color = 'white';
     this.value = 'day';
-  } else {
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+    alist[i].style.color = 'powderblue';
+    i = i + 1;
+    }
+    }
+
+    else {
     target.style.backgroundColor = 'white';
     target.style.color = 'black';
     this.value = 'night';
-  }
-  ">
-  <h3>
-  <ol>
-  <li><a href="1.html">admissions mercenary</li></a>
-  <li><a href="2.html">Yu Yi-jin</li></a>
-  <li><a href="3.html">Yu Da-Yeon</li></a>
-  <li><a href="4.html">Kang Ham-chan</li></a>
-  </h3>
-  </ol>
-  <body>
+    
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+    alist[i].style.color = 'blue';
+    i = i + 1;
+    }
+    }
+    ">
+    <h3>
+    <ol>
+    <li><a href="1.html">admissions mercenary</li></a>
+    <li><a href="2.html">Yu Yi-jin</li></a>
+    <li><a href="3.html">Yu Da-Yeon</li></a>
+    <li><a href="4.html">Kang Ham-chan</li></a>
+    </h3>
+    </ol>
+    <body>
     <p>
   I met my brother Yi Jin, who I thought died with my parents,
-   after 10 years.
+  after 10 years.
   She is rumored to be a good student and have a pretty face.
   So I was shot by Iljin and then I was subjected to school violence.
   On the day he went to school,
-   he was beaten by Kim Hee-jin and lied that he rolled on the stairs,
+  he was beaten by Kim Hee-jin and lied that he rolled on the stairs,
   but Yoo Yi-jin could not believe it, and he warned Kim Hee-jin,
-   the main culprit of persistent harassment,
+  the main culprit of persistent harassment,
   so he could go to school comfortably.I know my brother is strong,
   but I'm worried that my brother, who only returned to Korea because of him,
   will be damaged.
@@ -41,16 +58,16 @@
   And Dayeon cares about her brother a lot, too.
   </p>
   <input id="night_day2" type="button" value="night" onclick="
-if(this.value === 'night'){
+  if(this.value === 'night'){
   document.querySelector('body').style.backgroundColor = 'black';
   document.querySelector('body').style.color = 'white';
   this.value = 'day';
-} else {
+  } else {
   document.querySelector('body').style.backgroundColor = 'white';
   document.querySelector('body').style.color = 'black';
   document.querySelector('#night_day2').value = 'night';
-}
-">
+  }
+  ">
   <img src="da" width="30%">
   </body>
   </head>
